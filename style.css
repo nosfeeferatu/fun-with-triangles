@@ -3,7 +3,6 @@
 .container {
   text-align: center;
   background-color: #ddd0c8;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +11,43 @@
   position: relative;
 }
 
+nav{
+  display: flex;
+  background-color: #cfa78d;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-logo{
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+}
+
+.nav-logo img{
+  margin-bottom: -0.4rem;
+  margin-left: 0.3rem;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  min-width: 60%;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+nav a{
+  color: #323232;
+  text-decoration: none;
+}
+
+nav a:hover, .active{
+  font-weight: 700;
+}
+
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #323232;
   color: #323232;
   margin: 0;
@@ -71,4 +106,23 @@ p img{
   width: 1rem;
   margin-bottom: -2px;
   margin-right: 6px;
+}
+
+@media screen and (max-width: 768px){
+  .nav-logo{
+    display: none;
+  }
+
+  nav ul{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav li{
+    padding: 0.5rem 1rem;
+  }
+
+  .container{
+    width: 80%;
+  }
 }
