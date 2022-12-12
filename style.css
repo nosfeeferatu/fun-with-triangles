@@ -50,3 +50,25 @@ button {
   padding: 1rem 0 2rem;
   font-weight: 900;
 }
+
+.quiz-form{
+  padding-bottom: 1.5rem;
+}
+
+.quiz-form input{
+  width: unset;
+}
+
+.quiz-form label{
+  font-weight: 300;
+}
+
+.quiz-form p{
+  font-weight: 500;
+}
+
+p img{
+  width: 1rem;
+  margin-bottom: -2px;
+  margin-right: 6px;
+}
